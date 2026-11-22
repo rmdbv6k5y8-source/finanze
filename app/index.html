@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Finanze</title>
+  <meta name="description" content="Spese, budget e risparmi di casa, solo su questo dispositivo.">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Finanze">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="shell">
+    <nav class="nav" id="nav">
+      <a href="#/home" data-r="home"><span class="ico">🏠</span>Home</a>
+      <a href="#/movimenti" data-r="movimenti"><span class="ico">📒</span>Movimenti</a>
+      <button class="add" id="nuovo" aria-label="Nuovo movimento">+</button>
+      <a href="#/budget" data-r="budget"><span class="ico">🎯</span>Budget</a>
+      <a href="#/analisi" data-r="analisi"><span class="ico">📊</span>Analisi</a>
+      <a href="#/altro" data-r="altro" class="solo-pc"><span class="ico">⚙️</span>Altro</a>
+    </nav>
+    <main id="vista" tabindex="-1"></main>
+  </div>
+  <noscript>Per usare l'app serve JavaScript attivo.</noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
